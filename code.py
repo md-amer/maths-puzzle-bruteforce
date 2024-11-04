@@ -7,6 +7,8 @@ perm = permutations(range(1,10))
 
 perm = list(perm)
 
+l = len(perm)
+
 for j in range(l):
 	combo = perm[j]
 	a = combo[0]
@@ -33,4 +35,6 @@ for j in range(l):
 											print(combo)
 
 end = time()
-print(end - start)
+
+print('')
+print('It took '+str(end - start)+' seconds to solve.')
